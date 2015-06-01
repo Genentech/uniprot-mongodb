@@ -111,7 +111,6 @@ var findByIds = {
         "nickname": "getProteinByids"
     },
     'action': function (req, res) {
-
         var acs = req.params.ids.split(',');
         var collection = req.params.srcDatabase;
         var ans = db.collection(collection).find({

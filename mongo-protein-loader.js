@@ -136,7 +136,7 @@ MongoClient.connect(mongoUrl, function (err, db) {
          */
 
         var buffer = []
-        var chunkSize = 5000;
+        var chunkSize = 1000;
         var pushEntries = function (entry) {
             buffer.push(entry)
 
